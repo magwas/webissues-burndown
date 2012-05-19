@@ -1,0 +1,12 @@
+Use phpmyadmin to export an xml from your webissues database.
+Then run burndown.sh
+You should get out/index.html as the result.
+
+dependencies:
+ saxon 9 ( looking for it at ~/lib/saxon9he.jar if you put it to other place, change burndown.sh)
+ iconv
+ python
+ sqlite3
+ python-sqlite
+ gnuplot
+
