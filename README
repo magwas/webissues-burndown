@@ -1,4 +1,9 @@
 Use phpmyadmin to export an xml from your webissues database.
+The following attribute ids and values are hardcoded in burndown.py as of now (patch to make them configureable is welcome):
+story point: 13 (XS,S,M,L,XL)
+sprint id: 15
+state: 7 [ u"Closed", u"Processed", u"Active", u"In progress", u"Test case"]
+
 Then run burndown.sh
 You should get out/index.html as the result.
 
@@ -9,4 +14,9 @@ dependencies:
  sqlite3
  python-sqlite
  gnuplot
+
+maturity, support:
+This is a quick hack which WORKSFORME. I don't especially like webissues, and plan to convert to bugzilla anyway.
+So do not expect much progress. Pull requests through github _might_ be honored.
+Feel free to take over development.
 
